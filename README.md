@@ -53,4 +53,34 @@ Common lines: 2
 
 ---
 
+## find_repeats.sh
+
+Finds repeated substrings in a single file and outputs LZ77-style tokens.
+
+**Usage:**
+```bash
+bash find_repeats.sh input.txt
+```
+
+**Example:**
+
+Input:
+```
+ABCABCABC
+```
+
+Output:
+```
+A
+B
+C
+(3,3)
+(6,3)
+```
+
+- Single character = no match, output as literal
+- `(3,3)` = match found 3 positions back, copy 3 characters
+
+---
+
 *More scripts will be added as I keep learning.*
