@@ -81,6 +81,11 @@ C
 - Single character = no match, output as literal
 - `(3,3)` = match found 3 positions back, copy 3 characters
 
+**Errors:**
+```
+Usage: bash find_repeats.sh <input_file>   # no argument given
+Error: File 'x' not found                  # file doesn't exist
+```
 ---
 
 *More scripts will be added as I keep learning.*
